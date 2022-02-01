@@ -1,0 +1,19 @@
+{
+  "name": "@hyperswarm/testnet",
+  "version": "0.0.0",
+  "description": "Small module to help you spin up a local Hyperswarm testnet",
+  "main": "index.js",
+  "dependencies": {
+    "@hyperswarm/dht": "^4.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hyperswarm/testnet.git"
+  },
+  "author": "Mathias Buus (@mafintosh)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hyperswarm/testnet/issues"
+  },
+  "homepage": "https://github.com/hyperswarm/testnet"
+}
