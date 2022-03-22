@@ -3,6 +3,9 @@
   "version": "1.0.1",
   "description": "Small module to help you spin up a local Hyperswarm testnet",
   "main": "index.js",
+  "bin": {
+    "hyperswarm-testnet": "./bin.js"
+  },
   "dependencies": {
     "@hyperswarm/dht": "^5.0.12"
   },
