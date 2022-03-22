@@ -10,6 +10,7 @@ module.exports = async function createTestnet (size = 10, opts = {}) {
 
   const first = new DHT({
     ephemeral: false,
+    firewalled: false,
     bootstrap: [],
     bind: port
   })
@@ -22,6 +23,7 @@ module.exports = async function createTestnet (size = 10, opts = {}) {
   while (swarm.length < size) {
     const node = new DHT({
       ephemeral: false,
+      firewalled: false,
       bootstrap
     })
 
