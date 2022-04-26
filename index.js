@@ -46,11 +46,11 @@ class Testnet {
     this.bootstrap = bootstrap
   }
 
-  createNode () {
+  createNode (opts = {}) {
     const node = new DHT({
       ephemeral: true,
-      firewalled: false,
-      bootstrap: this.bootstrap
+      bootstrap: this.bootstrap,
+      ...opts
     })
 
     this.nodes.push(node)
