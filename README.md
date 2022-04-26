@@ -13,23 +13,38 @@ Use this if you want to use the swarm in tests, etc.
 ``` js
 const createTestnet = require('@hyperswarm/testnet')
 
-const nodes = await createTestnet(10) // create a local testnet with 10 dht nodes
-const bootstrap = [{ host: '127.0.0.1', port: nodes[0].address().port }] // the bootstrap address for this testnet
+const testnet = await createTestnet(10) // create a local testnet with 10 dht nodes
 ```
 
 ## API
 
-#### `const nodes = await createTestnet(size = 10, [options])`
+#### `const testnet = await createTestnet(size = 10, [options])`
 
 Create a new testnet. `size` is how many DHT nodes you want in it. Options include:
 
-```
+```js
 {
   port: preferredLocalPort, // defaults to ANY (0)
   host: preferredLocalHost, // defaults to 127.0.0.1
   teardown // optional async teardown helper ie, t.teardown in brittle/tap etc
 }
 ```
+
+#### `testnet.nodes`
+
+An array of nodes in the testnet.
+
+#### `testnet.bootstrap`
+
+An array of bootstrap addresses of the testnet.
+
+#### `const node = testnet.createNode()`
+
+Create an additional ephemeral node and add it to the testnet.
+
+#### `for (const node of testnet)`
+
+Iterate over the nodes of the testnet.
 
 ## License
 

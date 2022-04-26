@@ -9,6 +9,13 @@
   "dependencies": {
     "@hyperswarm/dht": "^5.0.12"
   },
+  "devDependencies": {
+    "brittle": "^2.3.1",
+    "standard": "^17.0.0"
+  },
+  "scripts": {
+    "test": "standard && brittle test.mjs"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/hyperswarm/testnet.git"
