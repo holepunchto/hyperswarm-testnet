@@ -7,7 +7,7 @@
     "hyperswarm-testnet": "./bin.js"
   },
   "dependencies": {
-    "@hyperswarm/dht": "^5.0.12"
+    "@hyperswarm/dht": "^6.0.0"
   },
   "devDependencies": {
     "brittle": "^2.3.1",
