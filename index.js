@@ -35,7 +35,7 @@ module.exports = async function createTestnet (size = 10, opts = {}) {
 
   teardown(async function () {
     await testnet.destroy()
-  })
+  }, { order: Infinity })
 
   return testnet
 }
@@ -59,6 +59,11 @@ class Testnet {
   }
 
   async destroy () {
+    for (const node of this.nodes) {
+      for (const server of node.listening) {
+        await server.close()
+      }
+    }
     for (let i = this.nodes.length - 1; i >= 0; i--) {
       await this.nodes[i].destroy()
     }
