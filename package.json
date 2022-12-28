@@ -18,12 +18,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/hyperswarm/testnet.git"
+    "url": "https://github.com/holepunchto/testnet.git"
   },
   "author": "Mathias Buus (@mafintosh)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hyperswarm/testnet/issues"
+    "url": "https://github.com/holepunchto/testnet/issues"
   },
-  "homepage": "https://github.com/hyperswarm/testnet"
+  "homepage": "https://github.com/holepunchto/testnet"
 }

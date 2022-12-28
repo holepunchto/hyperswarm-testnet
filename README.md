@@ -40,7 +40,7 @@ An array of bootstrap addresses of the testnet.
 
 #### `const node = testnet.createNode([options])`
 
-Create an additional ephemeral node and add it to the testnet. Options are the same as [`new DHT()`](https://github.com/hyperswarm/dht#const-node--new-dhtoptions).
+Create an additional ephemeral node and add it to the testnet. Options are the same as [`new DHT()`](https://github.com/holepunchto/hyperswarm-dht#const-node--new-dhtoptions).
 
 #### `for (const node of testnet)`
 
