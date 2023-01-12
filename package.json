@@ -1,6 +1,6 @@
 {
   "name": "@hyperswarm/testnet",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "description": "Small module to help you spin up a local Hyperswarm testnet",
   "main": "index.js",
   "bin": {
