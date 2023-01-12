@@ -12,7 +12,7 @@ module.exports = async function createTestnet (size = 10, opts = {}) {
     ephemeral: false,
     firewalled: false,
     bootstrap: [],
-    bind: port
+    port
   })
 
   await first.ready()
