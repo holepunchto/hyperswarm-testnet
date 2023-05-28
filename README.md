@@ -48,4 +48,4 @@ Iterate over the nodes of the testnet.
 
 ## License
 
-MIT
+Apache-2.0
