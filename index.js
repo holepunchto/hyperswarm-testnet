@@ -64,8 +64,8 @@ class Testnet {
         await server.close()
       }
     }
-    for (const node of this.nodes) {
-      await node.destroy()
+    for (let i = this.nodes.length - 1; i >= 0; i--) {
+      await this.nodes[i].destroy()
     }
   }
 
