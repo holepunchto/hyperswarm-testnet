@@ -10,7 +10,7 @@ testnet(size, { host, port: 49736 }).then(function ({ nodes, bootstrap }) {
   console.log('Bootstrap:', bootstrap)
 })
 
-function arg (name, short) {
+function arg(name, short) {
   for (let i = 2; i < process.argv.length; i++) {
     const arg = process.argv[i]
 

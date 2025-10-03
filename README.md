@@ -10,7 +10,7 @@ Use this if you want to use the swarm in tests, etc.
 
 ## Usage
 
-``` js
+```js
 const createTestnet = require('@hyperswarm/testnet')
 
 const testnet = await createTestnet(10) // create a local testnet with 10 dht nodes

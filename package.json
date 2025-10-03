@@ -11,10 +11,13 @@
   },
   "devDependencies": {
     "brittle": "^3.0.0",
-    "standard": "^17.0.0"
+    "prettier": "^3.6.2",
+    "prettier-config-holepunch": "^1.0.0"
   },
   "scripts": {
-    "test": "standard && brittle test.mjs"
+    "format": "prettier --write .",
+    "lint": "prettier --check .",
+    "test": "brittle test.mjs"
   },
   "repository": {
     "type": "git",
